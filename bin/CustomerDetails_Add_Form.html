@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+table{
+
+ text-align: center;
+        width: 500px;
+        height: 150px;
+        border:1px solid black;
+       
+
+
+}
+*{
+background:yellow;
+}
+.td1{
+
+text-align:center;
+}
+
+</style>
+<script>
+function Registration(){
+	var name=document.getElementById("id1").value;
+	var email=document.getElementById("id2").value;
+	var pass=document.getElementById("id3").value;
+	var con=document.getElementById("id4").value;
+	var address=document.getElementById("id4").value;
+	
+	if(name==""){
+		document.getElementById("err1").innerHTML="Not Be Empty"
+		return false;
+	}
+	if(!isNaN(name)){
+		document.getElementById("err1").innerHTML="Number Are Not Allowed"
+		return false;
+	}
+	if(email==""){
+		document.getElementById("err2").innerHTML="This Should be Not Empty"
+		return false;
+	}
+	if(pass==""){
+		document.getElementById("err3").innerHTML="This Should Not Kept Empty"
+		return false;
+	}
+	if(pass.length<8){
+		document.getElementById("err3").innerHTML="Length Size Must Be In 8 character "
+		return false;
+		
+	}
+	if(isNaN(pass)){
+		document.getElementById("err3").innerHTML="Should be in Number"
+		return false;
+	}
+	if(con==""){
+		document.getElementById("err4").innerHTML="Not kept Empty"
+		return false;
+	}
+	if(con.length<10){
+		document.getElementById("err4").innerHTML="exact size is 10"
+		return false;
+	}
+	if(isNaN(con)){
+		document.getElementById("err4").innerHTML="Only Number Are Allowed"
+		return false;
+	}
+	if(address==""){
+		document.getElementById("err5").innerHTML="Should Not KEpt Empty"
+		return false;
+	}
+}
+</script>
+</head>
+<body>
+
+<form onsubmit="return Registration()">
+<table border="1px" >
+<caption><h1>Add Customer Details</h1></caption>
+<tr>
+<td class="td1">Name</td>
+<td class="td2"><input type="text" name="name" placeholder="Enter Your Name" id="id1"> </td>
+<td><span id="err1"></span>
+</tr><br><br>
+<tr>
+<td class="td1">Email:</td>
+<td class= "td2"><input type="text" name="email" id="id2" placeholder="Enter valid Email id"></td>
+<td><span id="err2"></span>
+</tr><br><br>
+<tr>
+<td class="td1">PassWord:</td>
+<td class="td2"><input type="text" name="password" id="id3" placeholder="Enter Password"></td>
+<td><span id="err3"></span>
+</tr><br><br>
+<tr>
+<td class="td1">Contact:</td>
+<td class="td2"><input type="text" name="contact" id="id4" placeholder="Enter contact"></td>
+<td><span id="err4"></span>
+</tr><br><br>
+<tr>
+<tr>
+<td class="td1">Address:</td>
+<td class="td2"><input type="text" name="Address" id="id5" placeholder="Enter Address"></td>
+<td><span id="err5"></span>
+</tr><br><br>
+<tr>
+<td> <input type="submit" name="submit" value="submit"></td>
+<td> <input type="Reset"  name="Reset" value="Reset">
+</tr>
+<br><br>
+
+</table>
+</form>
+</body>
+</html>
