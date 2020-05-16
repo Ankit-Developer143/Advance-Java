@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Moving Box</title>
+    </head>
+    <body>
+    <style>
+        div{
+            height: 40px;
+            width: 70%;
+            margin:50 auto;
+            position: relative;
+            border-radius: 30px;
+            background-color: black; 
+        }
+        #react{
+            animation-name: move;
+            animation-duration: 5s;   
+        }
+        @keyframes move{
+            0%{
+                background-color: blue;
+                top: 0px;
+                left: 0px;
+                
+            }
+            25%{
+                background-color: aqua;
+                top: 25px;
+                left: 15px;
+                
+                    
+            }
+            50%{
+                background-color: brown;
+                top:50px;
+                left: 15px;
+            }
+            100%{
+                background-color: yellow;
+                top:0px;
+                left:-32;
+            }
+        }
+        
+        
+        </style>
+    <div id="react"></div>
+    
+    
+    </body>
+
+
+
+
+
+
+
+
+
+</html>
