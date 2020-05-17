@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Star Blink</title>
+    </head>
+    <body>
+    <style>
+        .star{
+           height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: yellow;
+            animation-iteration-count: infinite;
+            
+            
+        }
+        .star1{
+            height: 40px;
+            width: 40px;
+            border-radius:50% auto;
+          
+            margin-top: 10%;
+            margin-left: 35%;
+            margin-bottom: 20%;
+            animation-name: twinkle;
+            animation-duration: 1s;
+            
+            
+        }
+        .star2{
+            height: 40px;
+            width: 40px;
+            border-radius:50%;
+            
+            margin-top: 15%;
+            margin-left:55%;
+            animation-duration: 1s;
+            animation-name: twinkle;
+            
+        }
+        .star3{
+            height: 40px;
+            width: 40px;
+            border-radius:50%;
+           
+            margin-top: 35%;
+            margin-left: 45%;
+            animation-duration: 1s;
+            animation-name: twinkle;
+            
+        }
+        #back{
+             position: fixed;
+            left:0px ;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
+            height: 100%;
+            width: 100%;
+           
+        
+            background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6);
+                
+            
+        }
+        @keyframes twinkle{
+            20%{
+                transform: scale(1.6);
+                opacity: 0.5;
+                    
+            }
+            
+        }
+        
+        
+        
+        
+        
+        
+        </style>
+        <div id="back"></div>
+        <div class="star1 star"></div>
+        <div class="star2 star"></div>
+        <div class="star3 star"></div>
+    
+    
+    </body>
+
+
+</html>
