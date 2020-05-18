@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Moving Box</title>
+    </head>
+    <body>
+    <style>
+        div{
+            height: 50px;
+            width: 50%;
+            margin:50 auto;
+            position: relative;
+            border-radius: 30px;
+            
+        }
+        #react{
+            animation-name: move;
+            animation-duration: 15s;   
+        }
+        @keyframes move{
+            0%{
+                background-color: blue;
+                top: 0px;
+                left: 0px;
+                
+            }
+            25%{
+                background-color: yellow;
+                top: 25px;
+                left: 15px;
+                
+                    
+            }
+            50%{
+                background-color: brown;
+                top:50px;
+                left: 15px;
+            }
+            100%{
+                background-color: yellow;
+                top:0px;
+                left:-32;
+            
+           
+            }
+        }
+        
+        
+        </style>
+    <div class="fade" id="react"></div>
+    
+    
+    </body>
+
+
+
+
+
+
+
+
+
+</html>
